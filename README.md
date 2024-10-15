@@ -1,8 +1,8 @@
 # BOOLEAN_FUNCTION_MINIMIZATION
 
 ```
-Developed by: Oswald Shilo
-Reg No: 212223040139
+Developed by: VIJEY K S
+Reg No: 212223040239
 ```
 
 ## **AIM:**
