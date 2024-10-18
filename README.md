@@ -1,41 +1,24 @@
 # BOOLEAN_FUNCTION_MINIMIZATION
 
-```
-Developed by: VIJEY K S
-Reg No: 212223040239
-```
+**AIM:**
 
-## **AIM:**
 To implement the given logic function verify its operation in Quartus using Verilog programming.
 
 F1= A’B’C’D’+AC’D’+B’CD’+A’BCD+BC’D 
 
 F2=xy’z+x’y’z+w’xy+wx’y+wxy
 
-## **Equipment Required:**
+**Equipment Required:**
 
-**Hardware – PCs, Cyclone II , USB flasher**
+Hardware – PCs, Cyclone II , USB flasher
 
 **Software – Quartus prime**
 
-## **Theory**:
-* Boolean Function Minimization:
-Simplifies Boolean expressions to optimize hardware design and improve efficiency.
+**Theory**
 
-* Logic Gates:
-Boolean expressions are realized using fundamental logic gates like AND, OR, and NOT.
+**Logic Diagram**
 
-* Verilog:
-A hardware description language used to model, simulate, and synthesize digital circuits.
-
-* Quartus Software:
-Used for designing, compiling, and verifying FPGA implementations of logic functions.
-
-* RTL Schematic:
-Displays the hardware structure of the Boolean function, helping in understanding the circuit's operation.
-
-
-## **Procedure**
+**Procedure**
 
 1.	Type the program in Quartus software.
 
@@ -48,45 +31,65 @@ Displays the hardware structure of the Boolean function, helping in understandin
 5.	For different input combinations generate the timing diagram.
 
 
-## **Program:**
+**Program:**
 
-##### Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
+/* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
+
+Developed by: VIJEY K S
+RegisterNumber: 212223040239
 
 ```
-module ex2(a,b,c,d,f1);
+F1
+module exp02(a,b,c,d,f1);
 input a,b,c,d;
 output f1;
-assign f1=((~b & ~d) | (a & b & ~c) | (~a & b & d));
+assign f1=((~b & ~d) | (a & b & ~c) | (~a & b & d));
 endmodule
-```
 
-```
-module ex2m2(w,x,y,z,f2);
+F2
+module project22(w,x,y,z,f2);
 input w,x,y,z;
 output f2;
 assign f2= ((~y&z)|(w&y)|(x&y));
 endmodule
 ```
 
+**TRUTH TABLE**
+![image](https://github.com/user-attachments/assets/22370d1b-17b9-4c79-b5ad-9c9c1422cef6)
+
+![image](https://github.com/user-attachments/assets/01a37c85-5a5d-43cb-a5dd-f9bbe50557e7)
 
 
-## **Truth Table:**
 
-![2 1 truth table](https://github.com/user-attachments/assets/6a3f7a61-4175-4183-bb22-e91ce1e5bfea)
-![2 2 truth table](https://github.com/user-attachments/assets/a94b9962-e99c-4028-a265-5c906cca8121)
+**RTL realization**
 
-
-## **RTL**
-![image](https://github.com/user-attachments/assets/0b616916-2bcd-4b3f-b204-8ee8d662b71d)
-![image](https://github.com/user-attachments/assets/94112fb2-d4d7-41d2-a6e8-1385670fe380)
+**F1**
+![new f1](https://github.com/user-attachments/assets/1146e2a2-1578-409e-b809-a3a199a9c940)
 
 
-## **Timing Diagram**
-![image](https://github.com/user-attachments/assets/5c2f70fe-3c62-474a-a2a5-f4a59318c48f)
-![image](https://github.com/user-attachments/assets/bab2bc55-4617-46aa-8786-fbb0f76f4c24)
 
 
-## **Result:**
+**F2**
+![new f2](https://github.com/user-attachments/assets/21352699-f9ba-49c2-8dce-9c998af97902)
+
+
+
+
+**Output:**
+
+**F1**
+![new f1o](https://github.com/user-attachments/assets/64961e2f-0873-424a-9f56-0bc82eee99c6)
+
+
+
+
+**F2**
+![new f2o](https://github.com/user-attachments/assets/6c13bd79-880d-45e6-8686-14a95fcc687f)
+
+
+
+
+**Result:**
 
 Thus the given logic functions are implemented using and their operations are verified using Verilog programming.
 
